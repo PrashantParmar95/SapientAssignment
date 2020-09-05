@@ -44,9 +44,14 @@ p{
 background-color:#F5F4F3;
 margin:10px;
 }
-
-@media only screen and (max-width: 1100px) {
-    #image_class {
-      background-color: lightblue;
+.sidebar{
+    margin-top:10px;
+}
+@media only screen and (max-width: 579px) {
+    .col-sm-6.sidebar{
+        width: 50%;
     }
-  }
+    .btn-success{
+        width:150px;
+    }
+    }

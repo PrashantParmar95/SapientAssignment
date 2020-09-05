@@ -6,46 +6,35 @@
             <a id="reset_id" (click)="resetFilter()" href="">Reset</a>
             <p class="text-center" style="margin-top:20px"><b>Launch Year</b></p>
             <hr>
-            <div class="col-sm-12 row">
-                <div class="col-sm-6 text-center" *ngFor="let year of year_array">
-                    <div class="col-sm-6" style="margin-top:10px">
-                        <button class="btn btn-success" (click)="getYear(year)">{{year}}</button>
-                    </div>
+            <div class="row">
+                <div class="col-sm-6 text-center sidebar" *ngFor="let year of year_array" style="margin-top:10px">
+                    <button class="btn btn-success" (click)="getYear(year)">{{year}}</button>
                 </div>
             </div>
             <p class="text-center" style="margin-top:30px"><b>Successfull Launch</b></p>
             <hr>
-            <div class="col-sm-12 row">
-
-                <div class="col-sm-6 text-center">
-                    <div class="col-sm-12" style="margin-top:10px">
+            <div class="row">
+                <div class="col-sm-6 text-center sidebar">
                         <button class="btn btn-success" (click)="launchFilter(true)">True</button>
-                    </div>
                 </div>
-                <div class="col-sm-6 text-center">
-                    <div class="col-sm-12" style="margin-top:10px">
+                <div class="col-sm-6 text-center sidebar">
                         <button class="btn btn-success" (click)="launchFilter(false)">False</button>
-                    </div>
                 </div>
             </div>
             <p class="text-center" style="margin-top:30px"><b>Successfull Landing</b></p>
             <hr>
-            <div class="col-sm-12 row">
-
-                <div class="col-sm-6 text-center">
-                    <div class="col-sm-12" style="margin-top:10px">
+            <div class="row">
+                <div class="col-sm-6 text-center sidebar">
+                    <div class="col-sm-12">
                         <button class="btn btn-success" (click)="landFilter(true)">True</button>
                     </div>
                 </div>
-                <div class="col-sm-6 text-center">
-                    <div class="col-sm-12" style="margin-top:10px">
+                <div class="col-sm-6 text-center sidebar">
                         <button class="btn btn-success" (click)="landFilter(false)">False</button>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-9 row" style="margin-left:10px;">
-
             <div class="col-sm-3" *ngFor="let itm of missiondata " id="looping_id">
                 <div class="col-sm-12" id="left_mission_box">
                     <p class="text-center image_class">
